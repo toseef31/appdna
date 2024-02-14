@@ -87,8 +87,8 @@ const router = createRouter({
       component: CreateRole,
     },
     {
-      path: "/edit-role/:id",
-      name: "edit-role",
+      path: "/roles/:id",
+      name: "edit-roles",
       component: EditRole,
     },
     {
@@ -107,7 +107,7 @@ const router = createRouter({
       component: CreateBrand,
     },
     {
-      path: "/edit-brand/:id",
+      path: "/brands/:id",
       name: "edit-brand",
       component: EditBrand,
     },
@@ -161,14 +161,13 @@ const router = createRouter({
       //     name: "player-details",
       //     component: PlayerDetails,
       //   },
-      // ] 
+      // ]
     },
-      {
-        path: "/players/:id",
-        name: "player-details",
-        component: PlayerDetails,
-      },
-
+    {
+      path: "/players/:id",
+      name: "player-details",
+      component: PlayerDetails,
+    },
   ],
   linkActiveClass: "active",
   linkExactActiveClass: "exact-active",

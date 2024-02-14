@@ -338,7 +338,7 @@ const getbrands = async () => {
 };
 
 const editBrand = (id) => {
-  router.push(`/edit-brand/${id}`);
+  router.push(`/brands/${id}`);
 };
 async function setTenant(tenantId, name) {
   authStore.setTenant(tenantId, name);

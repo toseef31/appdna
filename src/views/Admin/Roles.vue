@@ -255,7 +255,7 @@ const showModal = (data, type) => {
   isModalVisible.value = true;
   modalType.value = type;
   role.value = data;
-  console.log(role)
+  console.log(role);
 };
 
 const closeModal = () => {
@@ -272,7 +272,7 @@ const getRoles = async () => {
 };
 
 const editRole = (id) => {
-  router.push(`/edit-role/${id}`);
+  router.push(`/roles/${id}`);
 };
 
 const onCreateRole = () => {
