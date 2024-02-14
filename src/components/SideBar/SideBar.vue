@@ -1,5 +1,10 @@
 <template>
   <!-- Side Bar -->
+  <div
+    class="overlay"
+    @click="toggleSidebar"
+    :class="{ active: showSidebar }"
+  ></div>
   <div v-if="User.isloggedIn" id="sidebar" :class="{ active: showSidebar }">
     <a href="/" class="logo">
       <img

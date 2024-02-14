@@ -1,9 +1,4 @@
 <template>
-  <div
-    class="overlay"
-    @click="toggleSidebar"
-    :class="{ active: showSidebar }"
-  ></div>
   <div style="display: flex">
     <SideBar
       :User="User"

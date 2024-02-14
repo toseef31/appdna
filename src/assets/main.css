@@ -48,11 +48,22 @@ a {
   opacity: 0;
   transition: all 0.3s linear;
 }
+
 .overlay.active {
   background-color: rgba(16, 16, 18, 0.5215686275);
   z-index: 1111;
   visibility: visible;
   opacity: 1;
+}
+
+@media (min-width: 1199px) {
+  .overlay {
+    /* additional styles for screens up to 1999 pixels if needed */
+  }
+
+  .overlay.active {
+    background-color: transparent;
+  }
 }
 
 #sidebar {
@@ -150,7 +161,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 1px solid #32475C1F;
+  border-left: 1px solid #32475c1f;
 }
 .sidebar-close-icon {
   height: 24px;
@@ -437,7 +448,6 @@ button,
         & .add-user-container {
           height: 52px;
           cursor: pointer;
-          
         }
         & .at-hover:hover {
           background-color: #f3f3ff;
@@ -456,7 +466,6 @@ button,
       font-weight: 600;
     }
   }
-
 }
 
 .search-bar {
@@ -952,8 +961,7 @@ background: linear-gradient(276deg, rgba(105, 108, 255, 0.90) 10.19%, rgba(224, 
       height: 40px;
       padding: 6.67px, 13.33px, 6.67px, 13.33px;
       border-radius: 6.67px;
-      box-shadow: 0.83px 0.83px 8.33px 0px #696CFF4D;
-
+      box-shadow: 0.83px 0.83px 8.33px 0px #696cff4d;
     }
     & button {
       margin-top: 0px;
@@ -966,7 +974,6 @@ background: linear-gradient(276deg, rgba(105, 108, 255, 0.90) 10.19%, rgba(224, 
       background: #4f52e6;
       box-shadow: 3px 3px 6px 0px #696cff59;
     }
-
   }
 }
 
@@ -1151,7 +1158,6 @@ background: linear-gradient(276deg, rgba(105, 108, 255, 0.90) 10.19%, rgba(224, 
     @media (max-width: 767px) {
       font-size: 16px;
     }
-
   }
   & .listButtons {
     display: flex;
@@ -2331,7 +2337,7 @@ background: linear-gradient(276deg, rgba(105, 108, 255, 0.90) 10.19%, rgba(224, 
         margin: 0;
         font-size: 14px;
         font-weight: 400;
-        color: #8E9BAA;
+        color: #8e9baa;
       }
       & .icon-sm-container {
         height: 56px;
@@ -2516,8 +2522,8 @@ background: linear-gradient(276deg, rgba(105, 108, 255, 0.90) 10.19%, rgba(224, 
     color: #8e9baa;
     background-color: #eceef1;
     &:hover {
-      background-color: #8E9BAA;
-      box-shadow: 3px 3px 6px 0px #8E9BAA40;
+      background-color: #8e9baa;
+      box-shadow: 3px 3px 6px 0px #8e9baa40;
       color: #ffffff;
     }
   }
@@ -2754,9 +2760,8 @@ background: linear-gradient(276deg, rgba(105, 108, 255, 0.90) 10.19%, rgba(224, 
       margin: 0;
       font-size: 16px;
       font-weight: 400;
-      color: #697A8D;
+      color: #697a8d;
       margin-top: 8px;
-
     }
   }
 

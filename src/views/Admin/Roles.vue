@@ -255,7 +255,6 @@ const showModal = (data, type) => {
   isModalVisible.value = true;
   modalType.value = type;
   role.value = data;
-  console.log(role);
 };
 
 const closeModal = () => {
